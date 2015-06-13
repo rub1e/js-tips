@@ -2,6 +2,13 @@
 
 A repository of coding tips, tricks, and patterns from the fifth cohort of Founders and Coders students.  
 
+## Table of contents
+
+* [On Click and On Enter events for text inputs](#On Click and On Enter events for text inputs)
+* [Add event listeners to DOM elements that don't exist on page load     
+](#Add event listeners to DOM elements that don't exist on page load     
+)
+
 ## On Click and On Enter events for text inputs     
 
 ### Description  
