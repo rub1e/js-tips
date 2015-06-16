@@ -4,8 +4,8 @@ A repository of coding tips, tricks, and patterns from the fifth cohort of Found
 
 ## Table of contents
 
-* [On Click and On Enter events for text inputs](#on-Click-and-On-Enter-events-for-text-inputs)
-* [Add event listeners to DOM elements that don't exist on page load](#add-event-listeners-to-DOM-elements-that-do-not-exist-on-page-load)
+* [On Click and On Enter events for text inputs](#on-click-and-on-enter-events-for-text-inputs)
+* [Add event listeners to DOM elements that don't exist on page load](#add-event-listeners-to-dom-elements-that-do-not-exist-on-page-load)
 * [Test your endpoints with curl](#test-your-endpoints-with-curl)
 
 ## On Click and On Enter events for text inputs
