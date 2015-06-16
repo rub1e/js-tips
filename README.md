@@ -5,7 +5,7 @@ A repository of coding tips, tricks, and patterns from the fifth cohort of Found
 ## Table of contents
 
 * [On Click and On Enter events for text inputs](#On-Click-and-On-Enter-events-for-text-inputs)
-* [Add event listeners to DOM elements that don't exist on page load](#Add-event-listeners-to-DOM-elements-that-don't-exist-on-page-load)
+* [Add event listeners to DOM elements that don't exist on page load](#Add-event-listeners-to-DOM-elements-that-don\'t-exist-on-page-load)
 * [Test your endpoints with curl](#test-your-endpoints-with-curl)
 
 ## On Click and On Enter events for text inputs
@@ -59,4 +59,4 @@ POST request with json
 curl -H "Content-Type: application/json" -d '{"property":"myvalue"}' mysebsite.com/myendpoint
 ```
 
-curl contains a lot of options and can even do your coffe. To read the documentation type **man curl** in your terminal
+curl contains a lot of options and can even do your coffee. To read the documentation type **man curl** in your terminal
