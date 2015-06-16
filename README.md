@@ -5,7 +5,7 @@ A repository of coding tips, tricks, and patterns from the fifth cohort of Found
 ## Table of contents
 
 * [On Click and On Enter events for text inputs](#On-Click-and-On-Enter-events-for-text-inputs)
-* [Add event listeners to DOM elements that don't exist on page load](#Add-event-listeners-to-DOM-elements-that-don\'t-exist-on-page-load)
+* [Add event listeners to DOM elements that don't exist on page load](#Add-event-listeners-to-DOM-elements-that-do-not-exist-on-page-load)
 * [Test your endpoints with curl](#test-your-endpoints-with-curl)
 
 ## On Click and On Enter events for text inputs
@@ -19,7 +19,7 @@ This is of general use whenever you have text inputs - e.g. searching, or tweeti
 ### Demo
 Cycle through from base to /3 of [this fiddle](http://jsfiddle.net/rubie/ej86gtc8) to see it in action.
 
-## Add event listeners to DOM elements that don't exist on page load
+## Add event listeners to DOM elements that do not exist on page load
 
 ### Description  
 You want to add event listeners to DOM elements that are created after the page loads. If you, say, add a click event to the element, targetting it by class, it won't work because the event is bound to something that doesn't yet exist. This solution suggests binding the event to an element that does exist on page load, and targetting the new element as a child of this element. In jQuery, it would take the form: ``` $("existing element").on("click", **("child element")**, function)```  
