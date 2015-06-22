@@ -7,7 +7,7 @@ A repository of coding tips, tricks, and patterns from the fifth cohort of Found
 * [On Click and On Enter events for text inputs](#on-click-and-on-enter-events-for-text-inputs)
 * [Add event listeners to DOM elements that don't exist on page load](#add-event-listeners-to-dom-elements-that-do-not-exist-on-page-load)
 * [Test your endpoints with curl](#test-your-endpoints-with-curl)
-
+* Test your type
 ## On Click and On Enter events for text inputs
 
 ### Description  
@@ -60,3 +60,48 @@ curl -H "Content-Type: application/json" -d '{"property":"myvalue"}' mysebsite.c
 ```
 
 curl contains a lot of options and can even do your coffee. To read the documentation type **man curl** in your terminal
+
+## Test your type
+
+### Description
+
+Use typeof to determine the type of a data. If you want to get more information about the type you might need to use the method
+toString.
+
+### Use case
+
+One way to debug your code is to know the type of the data you work with. For that javascript has the specific method **typeof**. But this function when applied to different type of object will always return object. To determine the specific type of an object we can use the method **toString** from Object.prototype.
+
+
+### Demo
+```javascript
+var string = "Hello World";
+var number = 1;
+var object = {"Hello":"World"};
+var array = ["Hello", "World"];
+var regex = /Hello World/;
+var nullNull = null;
+var undef = undefined;
+var boolean = false;
+var func = function(){};
+var date = new Date();
+var math = Math;
+var error = new Error();
+var nan = NaN;
+var doc = document;
+
+var arr = [string,number,object,array,regex,nullNull,undef,boolean,func,date,math,error,nan,doc];
+
+console.log(arr.map(function(elt){
+  return typeof elt;
+}));
+
+//Better with Object.prototype.toString
+
+console.log(arr.map(function(elt){
+  return Object.prototype.call(elt);
+}))
+
+```
+
+We need to use Object.prototype.toString.call because every object can specified their own implementation of the toString method (and we don't want this).
