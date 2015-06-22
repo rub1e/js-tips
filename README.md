@@ -7,7 +7,7 @@ A repository of coding tips, tricks, and patterns from the fifth cohort of Found
 * [On Click and On Enter events for text inputs](#on-click-and-on-enter-events-for-text-inputs)
 * [Add event listeners to DOM elements that don't exist on page load](#add-event-listeners-to-dom-elements-that-do-not-exist-on-page-load)
 * [Test your endpoints with curl](#test-your-endpoints-with-curl)
-* Test your type
+* [A more useful **typeof**](#a-more-useful-typeof)
 ## On Click and On Enter events for text inputs
 
 ### Description  
@@ -43,6 +43,8 @@ You can use the command line **curl** instead of the browser to send GET or POST
 
 It can be useful to test the behavior of your endpoints by sending some random data with your requests. It's a good way to know if your endpoints can deal with all kind of information without crashing. It can also be useful when you want to know what your endpoints return.
 
+NOTE: if you are using os x yosemite you might encounter the following issue: http://superuser.com/questions/830920/curl-local-host-names-on-mac-os-x-yosemite
+
 ### Demo
 
 GET request:
@@ -61,12 +63,11 @@ curl -H "Content-Type: application/json" -d '{"property":"myvalue"}' mysebsite.c
 
 curl contains a lot of options and can even do your coffee. To read the documentation type **man curl** in your terminal
 
-## Test your type
+## A more useful typeof  
 
 ### Description
 
-Use typeof to determine the type of a data. If you want to get more information about the type you might need to use the method
-toString.
+Use typeof to determine the type of a data. If you want to get more information about the type you might need to use the method toString.
 
 ### Use case
 
@@ -99,7 +100,7 @@ console.log(arr.map(function(elt){
 //Better with Object.prototype.toString
 
 console.log(arr.map(function(elt){
-  return Object.prototype.call(elt);
+  return Object.prototype.toString.call(elt);
 }))
 
 ```
