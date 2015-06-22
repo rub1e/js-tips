@@ -7,7 +7,8 @@ A repository of coding tips, tricks, and patterns from the fifth cohort of Found
 * [On Click and On Enter events for text inputs](#on-click-and-on-enter-events-for-text-inputs)
 * [Add event listeners to DOM elements that don't exist on page load](#add-event-listeners-to-dom-elements-that-do-not-exist-on-page-load)
 * [Test your endpoints with curl](#test-your-endpoints-with-curl)
-* [A more useful **typeof**](#a-more-useful-typeof)
+* [A more useful **typeof**](#a-more-useful-typeof)  
+
 ## On Click and On Enter events for text inputs
 
 ### Description  
